@@ -1,16 +1,140 @@
-# React + Vite
+# TaskFlow Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live URL:
+https://task-manager-frontend.vercel.app/
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Overview
 
-## React Compiler
+This is the frontend of the TaskFlow Task Management Application built using React and Vite.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The frontend provides the user interface for authentication and task management and communicates with the backend using secure REST APIs.
 
-## Expanding the ESLint configuration
+Users can:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Register and login
+- Create tasks
+- Update tasks
+- Delete tasks
+- Search tasks
+- Filter tasks
+- View paginated tasks
+
+---
+
+# Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- CSS
+- Fetch API for backend communication
+
+---
+
+# Core Responsibilities of Frontend
+
+Authentication UI:
+
+- Login form
+- Registration form
+- Handling authentication state
+
+Task Management UI:
+
+- Display tasks
+- Create task form
+- Edit task functionality
+- Delete task functionality
+
+Advanced UI Features:
+
+- Pagination controls
+- Search input
+- Status filter
+
+API Communication:
+
+Frontend sends requests to backend API and displays responses to user.
+
+---
+
+# Project Structure
+
+src/
+
+components/
+Reusable UI components
+
+pages/
+Application screens (Login, Register, Dashboard)
+
+services/
+API handling logic
+
+App.jsx
+Main application
+
+main.jsx
+Entry point
+
+---
+
+# Environment Variables
+
+Create .env file:
+
+VITE_API_URL=https://your-backend-url.onrender.com
+
+Example:
+
+VITE_API_URL=https://task-management-backend.onrender.com
+
+---
+
+# Run Locally
+
+Clone repo:
+
+git clone https://github.com/Mayank332k/Task_Manager_frontend.git
+
+Install dependencies:
+
+npm install
+
+Start server:
+
+npm run dev
+
+---
+
+# Build
+
+npm run build
+
+---
+
+# Deployment
+
+Frontend deployed on Vercel:
+
+https://task-manager-frontend.vercel.app/
+
+---
+
+# Key Highlights
+
+- Built using React and Vite
+- Clean and responsive UI
+- Connected to secure backend API
+- Production deployed
+
+---
+
+# Author
+
+Mayank
+
+GitHub:
+https://github.com/Mayank332k
